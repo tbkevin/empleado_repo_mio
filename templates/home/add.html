@@ -1,0 +1,7 @@
+<h2>probando createview</h2>
+<!-- Para acceder al formulario que nos manda createview usamos form 
+    para eso hay que interpolarlo con  -->
+<form method="post">{% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">guardar</button>
+</form>
